@@ -222,7 +222,7 @@ header {
 	}
 	@media (max-width: 1024px) {
 		&_info .cta_button {
-			height: 46px;
+			height: 55px;
 		}
 	}
 	@media (max-width: 768px) {
@@ -392,7 +392,7 @@ header {
 				left: 50px;
 			}
 			.talk02{
-				margin-top: 350px;
+				margin-top: 330px;
 			}
 		}
 		
@@ -564,9 +564,6 @@ header {
 			.w100{
 				max-width: 100%;
 				margin-top: 0;
-				// margin: auto;
-				// left: -15%;
-				// position: relative;
 			}
 		}
 		&_info {
@@ -591,6 +588,15 @@ header {
 		.example .checkbox-container {
             grid-template-columns: repeat(2, 1fr);
         }
+	}
+	@media (max-width: 550px) {
+		&_pic{
+			overflow-x: hidden;
+			.w100{
+				max-width: 140%;
+				margin-left: -20%;
+			}
+		}
 	}
 }
 
@@ -704,19 +710,19 @@ header {
 		}
 	}
 	@media (max-width: 768px) {
-		padding: 3rem 0 6rem 0;
+		padding: 3rem 0;
 		.wrap{
 			margin: 3rem auto 0 auto;
 		}
 		&_content {
 			flex-direction: column;	
 			align-items: center;
-    		padding: 30px 25px;
+    		padding: 0 10px;
 			gap: 0;
 		}
 		&_list {
 			margin-bottom: 4rem;
-			padding: 50px;
+			width: 90%;
 			h3{
 				margin: 1rem auto;
 			}

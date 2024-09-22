@@ -266,7 +266,7 @@ header a img {
 }
 @media (max-width: 1024px) {
   .kv_info .cta_button {
-    height: 46px;
+    height: 55px;
   }
 }
 @media (max-width: 768px) {
@@ -435,7 +435,7 @@ header a img {
     left: 50px;
   }
   .intro_content .talk02 {
-    margin-top: 350px;
+    margin-top: 330px;
   }
 }
 
@@ -660,6 +660,15 @@ header a img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 550px) {
+  .card01_pic {
+    overflow-x: hidden;
+  }
+  .card01_pic .w100 {
+    max-width: 140%;
+    margin-left: -20%;
+  }
+}
 
 .discount {
   background-color: #ffedd1;
@@ -783,7 +792,7 @@ header a img {
 }
 @media (max-width: 768px) {
   .discount {
-    padding: 3rem 0 6rem 0;
+    padding: 3rem 0;
   }
   .discount .wrap {
     margin: 3rem auto 0 auto;
@@ -796,12 +805,12 @@ header a img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 30px 25px;
+    padding: 0 10px;
     gap: 0;
   }
   .discount_list {
     margin-bottom: 4rem;
-    padding: 50px;
+    width: 90%;
   }
   .discount_list h3 {
     margin: 1rem auto;
