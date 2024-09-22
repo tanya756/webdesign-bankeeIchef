@@ -279,6 +279,17 @@ header a img {
   .kv_info {
     padding: 50px 0;
   }
+  .kv_info .logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kv_info .logo img {
+    max-width: 100px;
+  }
+  .kv_info .logo p {
+    font-size: 1.25rem;
+  }
   .kv_pic {
     padding-top: 0;
   }

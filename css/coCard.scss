@@ -229,6 +229,15 @@ header {
 		flex-direction: column;
 		&_info {
 			padding: 50px 0;
+			.logo{
+				align-items: center;
+				img{
+					max-width: 100px;
+				}
+				p{
+					font-size: 1.25rem;
+				}
+			}
 		}
 		&_pic{
 			padding-top: 0;
