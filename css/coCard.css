@@ -302,6 +302,7 @@ header a img {
 
 .intro {
   background-color: #ffedd1;
+  position: relative;
 }
 .intro .tit {
   text-align: center;
@@ -360,6 +361,8 @@ header a img {
   height: auto;
   -webkit-animation: main 2s infinite ease-in-out;
           animation: main 2s infinite ease-in-out;
+  z-index: 2;
+  position: relative;
 }
 .intro_content .talk {
   position: absolute;
@@ -404,6 +407,27 @@ header a img {
   right: 50px;
   left: unset;
 }
+.intro_bg01 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 20%;
+}
+.intro_bg02 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 20%;
+}
+.intro_bg03 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 20%;
+}
 @media (max-width: 1200px) {
   .intro_content .pic {
     height: 500px;
@@ -447,6 +471,15 @@ header a img {
   }
   .intro_content .talk02 {
     margin-top: 330px;
+  }
+  .intro_bg01 {
+    width: 50%;
+  }
+  .intro_bg02 {
+    display: none;
+  }
+  .intro_bg03 {
+    width: 50%;
   }
 }
 
