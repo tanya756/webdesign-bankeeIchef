@@ -64,7 +64,7 @@
                             最晚延後100天付款<span>(註)</span>
                         </p>
                         <p class="highlight">餐廳周轉更靈活 創造更多現金流！</p>
-                        <a href="#line" class="cta_button" rel="noopener noreferrer">
+                        <a href="#discount" class="cta_button" rel="noopener noreferrer">
                             回饋 <span>3</span>%無上限
                         </a>
                         <div class="note">
@@ -131,7 +131,7 @@
                                 <li>分三/六期分期輕鬆付</li>
                                 <li>帳單一平台掌握供應商紀錄</li>
                             </ul>
-                            <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer">
+                            <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer" style="display: none;">
                                 瞭解詳情
                             </a>
                             <div class="card" data-aos="fade-down" >
@@ -142,7 +142,7 @@
                                 <div class="text">
                                     讓餐廳採買對帳更輕鬆<br>
                                     額度30萬<span>每月只要NTD$588</span><br>
-                                    再享最高3%回饋無上限
+                                    再享最高2%回饋無上限
                                 </div>
                             </div>
                         </div>
@@ -198,15 +198,14 @@
                     </div>
                     <div class="discount_content wrap">
                         <div class="discount_list" data-aos="fade-down" data-number="1">
-                            <h3>最高<span>3</span>%回饋無上限</h3>
+                            <h3>最高<span>2</span>%回饋無上限</h3>
                             <div class="pic">
-                                3<span>%</span>
+                                2<span>%</span>
                             </div>   
                             <p>
-                                國內外累積交易金額達NTD$30萬元<br>
-                                享國內消費<span>1%</span>及<br>
-                                國外消費享<span>2%刷卡金</span>回饋<br>
-                                另有國豐商行加碼2%回饋<br>
+                                消費達檻享國內消費<span>1%</span>及<br> 
+                                國外消費享<span>2%</span>刷卡金回饋<br>  
+                                另有國豐商行<span>加碼2%回饋</span><br> 
                                 <span class="note">詳細辦法請見注意事項</span>
                             </p>
                         </div>
@@ -263,7 +262,7 @@
                             <ul>
                                 <li>活動辦法：
                                     <ol>
-                                        <li>早鳥禮：前500名於2024年12月31日前申辦BOSS企業卡(實體卡)且核卡之企業，首三個月試用期免快收慢付平台介接月費NTD$888，第四個月起則每月收取優惠價NTD$588至2025年6月30日，其後恢復原價即月費NTD$888。</li>
+                                        <li>早鳥禮：前500名於2024年12月31日前申辦BOSS企業卡(實體卡)且核卡之企業，享三個月試用期減免快收慢付平台介接月費NTD$888，其餘則每月收取優惠價NTD$588至2025年6月30日，其後恢復原價即月費NTD$888。</li>
                                         <li>首刷禮：前50名於活動期間持BOSS企業卡(實體卡)於<span>「快收慢付商務支付平台」</span>消費之企業，不限金額，可獲得NTD$1,000元超商電子禮券之首刷禮。</li>
                                         <li>刷卡禮：活動期間持BOSS企業卡(實體卡)或BOSS數位企業卡於國、內外累積交易金額達NTD $30萬元，享國內消費享1%及國外消費享2%刷卡金回饋。</li>
                                         <li>加碼2%回饋禮：持BOSS企業卡(實體卡)於<span>「快收慢付商務支付平台」</span>刷卡給「國豐商行有限公司」，且當月消費金額滿NTD$10,000，國豐商行即會回饋消費金額之2%！
@@ -307,8 +306,8 @@
         <div id="warning" class="warning"></div>
         <footer id="footer" class="footer"></footer>
 
-         <!-- aos -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <!-- aos -->
+        <script src="js/aos.js"></script>
     
         <!-- 初始化 AOS -->
         <script>
@@ -346,27 +345,26 @@
             });
         </script>
 
+        <!-- documen+summary -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const details = document.getElementById('methodDetails');
+                const summary = details.querySelector('summary');
 
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const details = document.getElementById('methodDetails');
-        const summary = details.querySelector('summary');
-
-        summary.addEventListener('click', function(e) {
-            e.preventDefault(); // 防止默認的切換行為
-            if (details.open) {
-                details.classList.add('closing');
-                setTimeout(() => {
-                    details.open = false;
-                    details.classList.remove('closing');
-                }, 300); // 與 CSS 過渡時間匹配
-            } else {
-                details.open = true;
-            }
-        });
-    });
-</script>
+                summary.addEventListener('click', function(e) {
+                    e.preventDefault(); // 防止默認的切換行為
+                    if (details.open) {
+                        details.classList.add('closing');
+                        setTimeout(() => {
+                            details.open = false;
+                            details.classList.remove('closing');
+                        }, 300); // 與 CSS 過渡時間匹配
+                    } else {
+                        details.open = true;
+                    }
+                });
+            });
+        </script>
 
     </body>
 </html>
