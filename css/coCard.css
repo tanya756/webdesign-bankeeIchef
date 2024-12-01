@@ -154,8 +154,11 @@ header a img {
 }
 .kv_info .logo p {
   margin-bottom: 0px;
-  color: #808285;
+  color: #ffffff;
   font-size: 1.5rem;
+  background: #808285;
+  padding: 0px 15px 0px 15px;
+  border-radius: 50px;
 }
 .kv_info h1 {
   font-size: 3.75rem;
@@ -316,6 +319,7 @@ header a img {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+  z-index: 2;
 }
 .intro_content .pic {
   position: relative;
