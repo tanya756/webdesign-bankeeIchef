@@ -12,40 +12,51 @@
         <meta property="og:image" content="images/fbcover.jpg">
         <meta property="og:description" content="無所不刷，不用再轉帳！餐廳BOSS必備採購卡">
         <meta name="description" content="無所不刷，不用再轉帳！餐廳BOSS必備採購卡">
-        <meta property="og:url" content="https://www.bankee.com.tw/event/coCard24Q4/index.html">
+        <meta property="og:url" content="https://www.bankee.com.tw/event/coCard_ichef/index.html">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
 
         <!-- css -->
-        <link rel="stylesheet" href="css/eventFooter.css">
+        <link rel="stylesheet" href="../../css/eventFooter.css">
+        <link rel="stylesheet" href="../../css/eventWarning.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/coCard.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- js -->
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/eventFooter.js"></script>
-
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/eventWarning.js"></script>
+        <script src="../../js/eventFooter.js"></script>
+        <script src="../../js/tracker_bankee.js"></script>
         <!-- Google Tag Manager -->
         <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-KWGJ7V4');
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "BankeeCrossDomain", "GTM-KWGJ7V4");
         </script>
         <!-- End Google Tag Manager -->
     </head>
 
-    <body>
+    <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
         <!-- Google Tag Manager (noscript) -->
-            <noscript>
-                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWGJ7V4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-            </noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWGJ7V4" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
         <div id="coCard">
             <!-- header -->
             <header>
-                <a href="https://www.bankee.com.tw" title="遠東商銀Bankee數位銀行"  target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bankee.com.tw" title="遠東商銀Bankee數位銀行" target="_blank" rel="noopener noreferrer">
                     <img src="images/logo.png" alt="遠東商銀Bankee數位銀行">
                 </a>
             </header>
@@ -54,16 +65,16 @@
             <article class="main">
                 <section class="kv" id="kv">
                     <div class="kv_info">
-                        <div class="logo" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="logo aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
                             <img src="images/kv_iCHEFlogo.png" alt="">
                             <p>餐廳限定</p>
                         </div>
-                        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">BOSS企業卡</h1>
-                        <p>
+                        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="aos-init aos-animate">BOSS企業卡</h1>
+                        <p class="highlight">隨時輕鬆刷 延後一次付</p><p>
                             廠商採購，通通能刷卡<br>
                             最晚延後100天付款<span>(註)</span>
                         </p>
-                        <p class="highlight">餐廳周轉更靈活 創造更多現金流！</p>
+                        
                         <a href="#discount" class="cta_button" rel="noopener noreferrer">
                             回饋 <span>2</span>%無上限
                         </a>
@@ -86,17 +97,17 @@
                             <img src="images/intro_shop01.png" alt="" class="shop01">
                             <img src="images/intro_shop02.png" alt="" class="shop02">
                         </div>
-                        <h2 data-aos="fade-down" >
+                        <h2 data-aos="fade-down" class="aos-init">
                             老闆們需要<span>BOSS企業卡</span><br>
                             <span>30萬額度</span>讓餐廳靈活周轉
                         </h2>
                         <a href="#line" class="arrow">
                             <img src="images/intro_arrow.png" alt="down">
                         </a>
-                        <p class="talk talk01" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                        <p class="talk talk01 aos-init" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
                             採購都靠現金或轉帳，<br>紀錄散亂不明難對帳...
                         </p>
-                        <p class="talk talk02" data-aos="fade-down" data-aos-duration="1000">
+                        <p class="talk talk02 aos-init" data-aos="fade-down" data-aos-duration="1000">
                             貨款馬上就得轉帳，<br>但戶頭臨時不方便動用!
                         </p>
                     </div>
@@ -112,13 +123,13 @@
                     </div>
                     <div class="card01_content wrap">
                         <div class="card01_info">
-                            <h2 data-aos="fade-down">
+                            <h2 data-aos="fade-down" class="aos-init">
                                 <div class="bosscard">
                                     BOSS企業卡
                                 </div>
                                 <div class="and">x</div>
                                 <div class="platform">
-                                    <img src="images/card01_platform.jpg" alt=""></br>
+                                    <img src="images/card01_platform.jpg" alt=""><br>
                                     <span class="note02">商務支付平台</span>
                                 </div>
                             </h2>
@@ -127,17 +138,17 @@
                                 你都可以線上刷卡
                             </p>
                             <ul>
-                                <li>可當一般信用卡使用</li>
+                                <li>無所不刷的信用卡!<br>廣告、差旅、食材商...皆能刷</li>
                                 <li>快收慢付可最多延長75天慢慢付款<br>
                                     供應商最短3天快快收款
                                 </li>
                                 <li>分三/六期分期輕鬆付</li>
                                 <li>帳單一平台掌握供應商紀錄</li>
                             </ul>
-                            <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer" style="display: none;">
+                            <a href="#" class="cta_button" target="_blank" &nbsp;rel="noopener noreferrer" style="display: none;">
                                 瞭解詳情
                             </a>
-                            <div class="card" data-aos="fade-down" >
+                            <div class="card aos-init" data-aos="fade-down">
                                 <div class="logo">
                                     <img src="images/kv_iCHEFlogo.png" alt="">
                                     <p>餐廳限定</p>
@@ -149,8 +160,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card01_pic" data-aos="fade-up">
-                            <img src="images/card01_notebook.png" alt="BOSS實體卡">
+                        <div class="card01_pic aos-init" data-aos="fade-up">
+                            <img src="images/card01_notebook.png" alt="BOSS企業卡">
                         </div>
                     </div>
                     <div class="card01_content example wrap">
@@ -187,8 +198,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card01_pic" data-aos="fade-down" >
-                            <img src="images/card01_step01.png" alt="BOSS實體卡" class="w100">
+                        <div class="card01_pic aos-init" data-aos="fade-down">
+                            <img src="images/card01_step01.png" alt="BOSS企業卡" class="w100">
                         </div>
                     </div>
                 </section>
@@ -200,28 +211,25 @@
                         </h1>
                     </div>
                     <div class="discount_content wrap">
-                        <div class="discount_list" data-aos="fade-down" data-number="1">
+                        <div class="discount_list aos-init" data-aos="fade-down" data-number="1">
                             <h3>最高<span>2</span>%回饋無上限</h3>
                             <div class="pic">
                                 2<span>%</span>
                             </div>   
-                            <p>
-                                消費達檻享國內消費<span>1%</span>及<br> 
-                                國外消費享<span>2%</span>刷卡金回饋<br>  
-                                另有國豐商行<span>加碼2%回饋</span><br> 
+                            <p>消費達檻享國內消費<span>1%</span>及<br>國外消費享<span>2%</span>刷卡金回饋<br>另有國豐商行<span>加碼2%回饋</span><br> 
                                 <span class="note">詳細辦法請見注意事項</span>
                             </p>
                         </div>
-                        <div class="discount_list" data-aos="fade-up" data-number="2">
+                        <div class="discount_list aos-init" data-aos="fade-up" data-number="2">
                             <h3>限量首刷禮 <span>千元</span>禮券</h3>
                             <img src="images/discount_pic02.png" alt="">
                             <p>
-                                BOSS企業卡(實體卡)核卡後<br>
+                                BOSS企業卡核卡後<br>
                                 於「快收慢付商務支付平台」刷卡<br>
                                 前50名可獲得<span>NTD$1,000元</span>首刷禮
                             </p>
                         </div>
-                        <div class="discount_list" data-aos="fade-down" data-number="3">
+                        <div class="discount_list aos-init" data-aos="fade-down" data-number="3">
                             <h3>早鳥享<span>免3期月費</span></h3>
                             <div class="pic">
                                 0<span>元</span>
@@ -235,7 +243,7 @@
                         </div>
                     </div>
                     <a href="#method" class="slip" id="showMethod"> 
-                        詳細辦法請見注意事項<span class="arrow">&#5167;</span>
+                        詳細辦法請見注意事項<span class="arrow">ᐯ</span>
                     </a>
                </section>
 
@@ -251,39 +259,40 @@
                         <div class="text">
                             <h3>申辦Boss卡</h3>
                             <p>深入了解產品、申辦及使用相關問題LINE 官方帳號隨時解答！</p>
-                            <a href="https://lin.ee/XbkvH3Y" class="cta_button" target="_blank" rel="noopener noreferrer">加入LINE官方帳號 〉</a>
+                            <a href="https://lin.ee/XbkvH3Y" class="cta_button" target="_blank" &nbsp;rel="noopener noreferrer">加入LINE官方帳號 〉</a>
                         </div>
                         
                     </div>
                </section>
 
                 <section class="method frame" id="method">
-                    <details id="methodDetails">
+                    <details id="methodDetails" open="">
                         <summary>詳細辦法請見注意事項 </summary>
                         <div class="content">
                             <h2>活動辦法</h2>
                             <ul>
                                 <li>活動辦法：
                                     <ol>
-                                        <li>早鳥禮：前500名於2024年12月31日前申辦BOSS企業卡(實體卡)且核卡之企業，享三個月試用期減免快收慢付平台介接月費NTD$888，其餘則每月收取優惠價NTD$588至2025年6月30日，其後恢復原價即月費NTD$888。</li>
-                                        <li>首刷禮：前50名於活動期間持BOSS企業卡(實體卡)於<span>「快收慢付商務支付平台」</span>消費之企業，不限金額，可獲得NTD$1,000元超商電子禮券之首刷禮。</li>
-                                        <li>刷卡禮：活動期間持BOSS企業卡(實體卡)或BOSS數位企業卡於國、內外累積交易金額達NTD $30萬元，享國內消費享1%及國外消費享2%刷卡金回饋。</li>
-                                        <li>加碼2%回饋禮：持BOSS企業卡(實體卡)於<span>「快收慢付商務支付平台」</span>刷卡給「國豐商行有限公司」，且當月消費金額滿NTD$10,000，國豐商行即會回饋消費金額之2%！
+                                        <li>早鳥禮：前500名於2024年12月31日前申辦BOSS企業卡且核卡之企業，享三個月試用期減免快收慢付平台介接月費NTD$888，其餘則每月收取優惠價NTD$588至2025年6月30日，其後恢復原價即月費NTD$888。</li>
+                                        <li>首刷禮：前50名於活動期間持BOSS企業卡於<span>「<a href="https://bpsp.gateweb.cloud/login" target=_blank">快收慢付商務支付平台</a>」</span>消費之企業，不限金額，可獲得NTD$1,000元超商電子禮券之首刷禮。</li>
+                                        <li>刷卡禮：活動期間持BOSS企業卡或BOSS數位企業卡於國、內外累積交易金額達 NTD $30 萬元，享國內消費享 1% 及國外消費享 2% 刷卡金回饋。</li>
+                                        <li>加碼2%回饋禮：持BOSS企業卡於<span>「<a href="https://bpsp.gateweb.cloud/login" target=_blank">快收慢付商務支付平台</a>」</span>刷卡給「國豐商行有限公司」，且當月消費金額滿NTD$10,000，國豐商行即會回饋消費金額之2%！
                                         </li>
                                     </ol>
                                 </li>
                                 <li>回饋時間：
                                     <ol>
-                                        <li>首刷禮：將於 2024/11/30 前陸續將禮券電子序號 Email 至企業申請文件上第一順位授權使用人留存之電子信箱。</li>
+                                        <li>首刷禮：將於 2024/12/31 前陸續將禮券電子序號 Email 至企業申請文件上第一順位授權使用人留存之電子信箱。</li>
                                         <li>刷卡禮：最晚將於活動結束後的兩個帳單入帳期卡金全回饋。</li>
-                                        <li>加碼2%回饋禮：每月「國豐商行有限公司」將以結算消費金額之2%，並以ｏｏｏ方式回饋給您，詳情請洽「國豐商行有限公司」。</li>
+
+                                        <li>加碼2%回饋禮：每月「國豐商行有限公司」將以結算消費金額之2%，詳情請洽「國豐商行有限公司」。</li>
                                     </ol>
                                 </li>
                             </ul>
                 
                             <h2>注意事項</h2>
                             <ol>
-                                <li>國內消費定義：刷卡金回饋範圍不含<span>「快收慢付商務支付平台」</span>上之交易、悠遊加值金、eTag 儲值金、代繳 eTag 智慧停車費、年費、公共事業費用（水、電、瓦斯）中華電信費用等）、各項預金代繳、分期付款、學雜費（包含海外學校）、預借現金、代償本金及利息、逾放本金及利息、各類稅款、各項手續費（包含但不限掛失、調閱簽單、分期付款、預借現金手續費等）、違約金及復權費、爭議款、各類違約費年費（包含但不限公務機關繳費平台（包含但不限學雜費、各類規費繳款、罰鍰等）、繳費平台 APP、繳公用事業費）、醫療費用平台（包含但不限學雜費、停車費、寺廟香油錢等）、E 政府平台等）、eToro 及其他相關跨境/海外投資交易平台之交易金、跨境繳稅平台及境外博弈網站)。</li>
+                                <li>國內消費定義：刷卡金回饋範圍不含<span>「<a href="https://bpsp.gateweb.cloud/login" target=_blank">快收慢付商務支付平台</a>」</span>上之交易、悠遊加值金、eTag 儲值金、代繳 eTag 智慧停車費、年費、公共事業費用（水、電、瓦斯）中華電信費用等）、各項預金代繳、分期付款、學雜費（包含海外學校）、預借現金、代償本金及利息、逾放本金及利息、各類稅款、各項手續費（包含但不限掛失、調閱簽單、分期付款、預借現金手續費等）、違約金及復權費、爭議款、各類違約費年費（包含但不限公務機關繳費平台（包含但不限學雜費、各類規費繳款、罰鍰等）、繳費平台 APP、繳公用事業費）、醫療費用平台（包含但不限學雜費、停車費、寺廟香油錢等）、E 政府平台等）、eToro 及其他相關跨境/海外投資交易平台之交易金、跨境繳稅平台及境外博弈網站)。</li>
                                 <li>國外消費定義：係指清算地非 TW 或 TWN 之交易，且刷卡有收取「國外交易清算手續費」之帳單交易納入回饋，惟刷卡金回饋範圍不含為外匯清算手續費、預借現金、學雜費、eToro 及其他相關跨境/海外投資交易平台之交易金以外幣結算之交易，以境外消費回饋計算為入帳金額，持卡人核實上之新臺幣清算整數。</li>
                                 <li>刷卡回饋係採歸戶回饋原則，連借附卡亦視為正卡持卡人之回饋，回饋之刷卡金採四捨五入計算，限消費信用卡繳款，不可兌換現金，折抵後仍有剩餘時 續做處理。</li>
                                 <li>本活動將別為新舊戶，舊戶回饋時間依本行作業時間為準。</li>
@@ -297,7 +306,7 @@
                 </section>
 
                 <div class="share">
-                    <a href="https://lin.ee/XbkvH3Y" target="_blank" rel="noopener noreferrer">
+                    <a href="https://lin.ee/XbkvH3Y" target="_blank" &nbsp;rel="noopener noreferrer">
                         <img src="images/shareline.png" alt="shareline">
                     </a>
                 </div>
@@ -369,6 +378,8 @@
             });
         </script>
 
+    
+
+
     </body>
 </html>
-
